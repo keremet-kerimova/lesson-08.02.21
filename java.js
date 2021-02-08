@@ -26,6 +26,12 @@ fullName.addEventListener('change', function(event) { // при изменени
    fullName.value = '';
     };
 });
+
+fullName.addEventListener('keydown', function(event) { // при нажатии на клавищу
+    if (fullName.Value.lenght > 23) {
+        event.preventDefault();
+    }
+});
 fullName.addEventListener('copy', function(event) { // при копировании
     console.log(event);
 });

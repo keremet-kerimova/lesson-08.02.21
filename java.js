@@ -22,8 +22,8 @@ fullName.addEventListener('change', function(event) { // при изменени
     console.log('change');
 
 
-    if (event.length <= '23'){
-     event.preventDefault();
+    if (fullName.Value.lenght > 23){
+   fullName.value = '';
     };
 });
 fullName.addEventListener('copy', function(event) { // при копировании

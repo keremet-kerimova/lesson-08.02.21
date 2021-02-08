@@ -20,6 +20,11 @@ fullName.addEventListener('keyup', function(event) { // при отпускан�
 });
 fullName.addEventListener('change', function(event) { // при изменении поля (потеря фокуса)
     console.log('change');
+
+
+    if (event.length <= '23'){
+     event.preventDefault();
+    };
 });
 fullName.addEventListener('copy', function(event) { // при копировании
     console.log(event);
